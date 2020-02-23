@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--
+    import : 一般用于团队开发，它可以将多个配置文件合并成一个
+    当多个配置里面有相同的配置时，它会合并相同的配置
+    -->
+    <import resource="beans.xml"/>
+    <import resource="beans2.xml"/>
+    <import resource="beans3.xml"/>
+
+</beans>
+

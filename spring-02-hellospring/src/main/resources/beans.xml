@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- 在 spring 中创建对象， 在 spring 中这些都称为 bean
+    类型 变量名=new 类型();
+    Hello hello=new Hello();
+    bean==对象   相当于 new Hello();
+
+    id = 变量名
+    class = new 的对象;
+    property  相当于给对象中的属性设置一个值
+    -->
+    <bean id="hello" class="com.local.pojo.Hello">
+        <property name="name" value="spring"/>
+    </bean>
+
+</beans>
